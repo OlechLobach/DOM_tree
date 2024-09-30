@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JS - Події миші і клавіатури</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body class="bg-dark">
+    <div class="container py-5 px-3 text-bg-info">
+      <h1 class="h1 text-danger text-center mb-5">Події в JavaScript</h1>
+
+      <section class="text-bg-secondary p-4 rounded-3 mb-5">
+        <p class="h3"><b>Task 1.</b></p>
+        <p>
+          Після натискання на кнопку #b-1 функція присвоює блоку #div-1 ширину
+          200px, висоту 90px і вивидить значення в блок.
+        </p>
+        <div id="div-1" class="block mb-3"></div>
+        <button type="button" id="b-1" class="btn btn-danger px-5 py-2">
+          Task-1
+        </button>
+      </section>
+
+      <section class="text-bg-secondary p-4 rounded-3 mb-5">
+        <p class="h3"><b>Task 2.</b></p>
+        <p>
+          За натискання кнопки #b-2 запускайте функцію, яка робить toggle класу
+          .bg-orange для блоку div-2.
+        </p>
+        <div id="div-2" class="block block-mod mb-3"></div>
+        <button type="button" id="b-2" class="btn btn-danger px-5 py-2">
+          Task-2
+        </button>
+      </section>
+
+      <section class="text-bg-secondary p-4 rounded-3 mb-5">
+        <p class="h3"><b>Task 3.</b></p>
+        <p>
+          За натисканням #b-3 запускайте функцію, яка перевіряє наявність класу
+          .bg-orange у блоку #div-2 (так, саме #div-2 ). Результат – true або
+          false, виводьте у .out-3.
+        </p>
+        <button type="button" id="b-3" class="btn btn-danger px-5 py-2 mb-3">
+          Task-3
+        </button>
+        <div id="out-3" class="p-3 text-bg-light rounded-3"></div>
+      </section>
+
+      <section class="text-bg-secondary p-4 rounded-3 mb-5">
+        <p class="h3"><b>Task 4.</b></p>
+        <p>
+          За натискання кнопки #b-4 запускайте функцію, яка надає блокам .out-4
+          клас .bg-red. Зверніть увага, що даних блоків більше одного, отже
+          потрібен цикл.
+        </p>
+        <div class="mb-3 d-flex gap-4">
+          <div class="out-4">out-4</div>
+          <div class="out-4">out-4</div>
+          <div class="out-4">out-4</div>
+          <div class="out-4">out-4</div>
+          <div class="out-4">out-4</div>
+        </div>
+        <button type="button" id="b-4" class="btn btn-danger px-5 py-2">
+          Task-3
+        </button>
+      </section>
+
+      <section class="text-bg-secondary p-4 rounded-3 mb-5">
+        <p class="h3"><b>Task 5.</b></p>
+        <p>
+          Ускладнимо попередні завдання. За допомогою циклу повісимо на блоки
+          .out-5 подію клік. По кліку має виконуватися функція. Функція повинна
+          робити toggle клас .bg-blue тому .out-5 на якому клікнули.
+        </p>
+        <div class="mb-3 d-flex gap-4">
+          <div class="out-5">out-5</div>
+          <div class="out-5">out-5</div>
+          <div class="out-5">out-5</div>
+          <div class="out-5">out-5</div>
+          <div class="out-5">out-5</div>
+        </div>
+      </section>
+
+      <section class="text-bg-secondary p-4 rounded-3 mb-5">
+        <p class="h3"><b>Task 6.</b></p>
+        <p class="mb-3">
+          Створіть HTML-сторінку з можливістю введення числового значення через
+          кнопки (більше, менше). Користувач не повинен мати можливість
+          друкувати текст або цифри. Число змінюється лише при натисканні на
+          кнопки.
+        </p>
+        <div id="counter" class="counter mb-3">
+          <input
+            type="text"
+            class="counter-input"
+            id="number"
+            value="0"
+            readonly
+          />
+          <button
+            type="button"
+            id="btn-increment"
+            class="counter-btn-increment"
+          >
+            +
+          </button>
+          <button
+            type="button"
+            id="btn-decrement"
+            class="counter-btn-decrement"
+          >
+            -
+          </button>
+        </div>
+      </section>
+
+      <section class="text-bg-secondary p-4 rounded-3 mb-5">
+        <p class="h3"><b>Task 7.</b></p>
+        <p>
+          Створіть HTML-сторінку з кнопкою, натисканням на яку додаються
+          кольорові блоки на сторінку. Блок має видалятися зі сторінки по кліку
+          на сам блок.
+        </p>
+        <div class="block-color mb-3">
+          <div class="block-color__items" id="block-color">
+            <!-- <div class="block-color__item" style="background-color: red"></div>
+            <div
+              class="block-color__item"
+              style="background-color: green"
+            ></div>
+            <div
+              class="block-color__item"
+              style="background-color: blueviolet"
+            ></div>
+            <div class="block-color__item" style="background-color: blue"></div>
+            <div
+              class="block-color__item"
+              style="background-color: palevioletred"
+            ></div> -->
+          </div>
+          <button id="btn-color" type="button" class="btn btn-warning">
+            add block
+          </button>
+        </div>
+      </section>
+
+      <section class="text-bg-secondary p-4 rounded-3 mb-5">
+        <p class="h3"><b>Task 8.</b></p>
+        <p>
+          Створіть HTML-сторінку з текстом і палітрою кольорів. Натискаючи на
+          колір палітри, колір тексту має змінюватися на обраний. Для вказівки,
+          якій клітинці відповідає той чи інший колір, можна скористатися
+          атрибутом data-color у кожній клітинці, а потім, за допомогою JS,
+          отримувати необхідний колір із цього атрибуту.
+        </p>
+        <div>
+          <img src="img/Screenshot_4.png" alt="" / style="max-width: 100%">
+        </div>
+        <div id="" class="my-8">
+          <div class="color-palette">
+            <div
+              class="color-palette__item"
+              data-color="#dca054"
+              style="background-color: rgb(220, 160, 84)"
+            ></div>
+          </div>
+          <p class="text-color">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            sint dolorem maiores tempora dicta enim pariatur minima, nobis cum
+            facere consectetur dignissimos culpa laborum vitae repudiandae
+            fugiat, tempore dolor voluptates neque? Quasi culpa doloremque
+            itaque commodi? Sequi corrupti atque iusto eos impedit ratione, quia
+            consequatur, esse debitis sint placeat quam eaque quidem expedita ut
+            harum dicta unde, velit possimus minus ea quae! Eum ullam cumque
+            culpa esse. Repellat, quo numquam quibusdam aut asperiores iure
+            officia, facere obcaecati officiis voluptatem dicta assumenda
+            eveniet saepe excepturi. Sunt accusantium maiores tenetur cumque
+            soluta ipsum autem eum laudantium vero nulla dolor porro impedit
+            explicabo.
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
